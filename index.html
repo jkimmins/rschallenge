@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/output.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="grid h-screen place-items-center" id="app">
+        <h1>Select your birthday.</h1>
+        <input type="date" v-model="date">
+        <h1 hidden id="selected">{{date}}</h1>
+        <h1 hidden id="daysSince">It has been <span id="days"></span> days since you were born.</h1>
+        <h1 hidden id="daysTo">There are <span id="daysLeft"></span> days until your next birthday.</h1>
+        <h1 hidden id="happyBirthday">Happy Birthday!</h1>
+        <h1 hidden id="invalid">Invalid Birthday</h1>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
